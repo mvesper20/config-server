@@ -12,7 +12,7 @@ spring:
 security:
   oauth2:
     client:
-      clientId: ${vcap.services.oauth2.credentials.clientId}
+      clientId: ${vcap.services.oauth-client.credentials.clientID}
       clientSecret: ${vcap.services.oauth2.credentials.clientSecret}
       accessTokenUri: https://github.com/login/oauth/access_token
       userAuthorizationUri: https://github.com/login/oauth/authorize
